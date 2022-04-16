@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Git Pull') {
             steps {
+		    // for cloning repo
                 // Make sure to add your own git url and credentialsId
 				git url: 'https://github.com/Sahaj8/CalculatorUsingDevOps.git', branch: 'main'
             }
